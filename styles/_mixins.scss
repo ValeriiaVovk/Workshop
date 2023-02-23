@@ -1,0 +1,21 @@
+@mixin button() {
+    padding: 21px 45px;
+    border-radius: var(--main-border-radius) var(--main-border-radius) 0px 0px;
+}
+
+@mixin maxBlockWidth() {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@mixin _1024 {
+    @media screen and (min-width: 1024px) and (max-width: 1220px) {
+        @content;
+    }
+}
+
+@mixin _1100 {
+    @media screen and (min-width: 1024px) and (max-width: 1100px) {
+        @content;
+    }
+}
